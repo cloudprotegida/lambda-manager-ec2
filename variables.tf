@@ -14,13 +14,6 @@ variable "lambda_timeout" {
     default = 60
 }
 
-variable lambda_file {
-    default = {
-        file1 = "startec2"
-        file2 = "stopec2"
-    }
-}
-
 variable "tags" {
   default = {
     Name    = "lambda-manager-ec2"
