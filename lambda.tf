@@ -24,7 +24,6 @@ resource "aws_lambda_function" "lambda_startec2" {
     variables = {
       TARGET_TAG_KEY      = lookup(var.lambda_env, "KEY") 
       TARGET_TAG_VALUE    = lookup(var.lambda_env, "VALUE")
-      REGION   = var.region
     }
  }
 }
