@@ -1,6 +1,6 @@
 resource "aws_cloudwatch_event_rule" "profile_stopec2_lambda_event_rule" {
   name = "stopec2-lambda-event-rule"
-  description = "retry scheduled cron"
+  description = "stopec2 scheduled cron"
   schedule_expression = lookup(var.sched_expr, "stop")
 }
 
