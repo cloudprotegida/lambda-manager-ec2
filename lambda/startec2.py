@@ -16,10 +16,10 @@ def start_instance():
         }
     ]
     instances = client.instances.filter(Filters=filters)
-    RunningInstances = [instance.id for instance in instances]
-    print(RunningInstances)
-    if len(RunningInstances) > 0:
-        shuttingDown = client.instances.filter(InstanceIds=RunningInstances).start()
+    StoppedInstances = [instance.id for instance in instances]
+    print(StoppedInstances)
+    if len(StoppedInstances) > 0:
+        starting = client.instances.filter(InstanceIds=StoppedInstances).start()
         print("Starting instances")
     else:
         print("No instances STOPPED")

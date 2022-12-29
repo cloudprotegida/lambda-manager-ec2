@@ -1,0 +1,6 @@
+Repositorio: 
+https://github.com/cloudprotegida/lambda-manager-ec2.git
+
+1 - Ter o terraform instalado
+2 - Ter usuario administrador na AWS
+3 - Ter awscli instalado
